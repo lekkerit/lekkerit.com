@@ -1,168 +1,637 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      
-    <title>Lekker IT -- Yummy</title>
-      
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta http-equiv="x-ua-compatible" content="ie=edge">  
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
-    
-    <body>
-    
-    <nav class="navbar-static-top navbar-default" id="home">
-        <div class="container-fluid">
-            <div class="navbar-brand">
-            
-    <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">Menu</button>
-    <div class="collapse navbar-collapse navHeaderCollapse">
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="mailto:barry@lekkerit.com">Contact</a></li>
-        </ul>
-        <a class="nav-brand" href="#">
-                <img alt="lekker-it" class="logo" id="responsive-image" src=images/logo.png>
-      </a>
-    </div>
-    </div>
-    </nav>
-        
-    <div class="jumbotron">
-        <div class="container">
-            
-            <h1 class="display-3">Lekker IT</h1>
-            <p class="lead">Below are previous and current 'live' web development projects.<br> Watch this space for more yummy sites, native apps and super-cool coding.</p>
-          <p class="lead">
-            <a class="btn btn-primary btn-lg" a href="mailto:barry@lekkerit.com" role="button">barry@lekkerit.com</a></p>
-            <p class="footer">"Need a website? I can build one for you.."</p>
-        
-        </div>
-        </div>
-        
-    <div class="alt2">
-     <div class="container">
-        <div class="row padding">
-            <div class="col-md-6">
-                <h2 class="text-right" id="about">About me</h2>
-                <h5 class="lead text-right">I moved to Amsterdam from London to become a Java Android Developer. To fund my training I make websites and beautiful industrial desks for home or office use. You may have noticed that I like to make both digital and physical things, perhaps I could build something for you?</h5><hr>
-                <h5 class="lead text-right">In the not so distant past, I worked for Intel, The Mayor's Office and Arup. I am proud to say I have 10-year's experience, including many high-profile projects delivered utilising the scrum-methodology ..</h5>
-                
-            </div>
-            
-            <div class="col-md-6">
-                    
-            <img src="images/barry.jpeg" class="img-circle img-responsive" id="profile-image" alt="barry o'brien">
-            </div>
-            </div>
-            </div>
-            </div>
-                 
-            </div>
-            
-        <div class="alt1">
-        <div class="container">
-        <div class="row padding">
-            
-        <h1 class="text-center" id="portfolio">Portfolio</h1>
-        <div class="col-md-4">
-        <div class="card-inverse"> 
-        
-            <div class="card-block">
-            
-            <h4 class="lead card-title">My 1st App</h4>
-            <p class="card-text">I taught myself a back-end language called PHP and built my first app.</p>
-            <a href="http://www.lekkerit.com/content/6.php/weather.php" target="_blank" class="btn btn-primary">Check out the weather!</a>
-            <hr>
-            <img src="images/weather.jpg" alt="responsive-image" img class="card-img-top img-responsive">        
-                        
-            <div class="card-block">
-            <br>
-                
-            </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-4">
-            
-        <div class="card-inverse">
-            
-            <div class="card-block">
-           
-            <h4 class="lead card-title">NRMM Database</h4>
-                
-            <p class="card-text">Scrum-Master - I built the world's 1st air quality database for construction machinery.</p>
-            <a href="http://nrmm.london" target="_blank" class="btn btn-primary">NRMM Database</a>
-            <hr>
-                <iframe  src="https://www.youtube.com/embed/CRWaXYWFY_k" frameborder="0" allowfullscreen alt="responsive-image" class="center-block"></iframe>
-                        
-            <div class="card-block">
-            <br>
-                
-            </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-4">
-    
-        <div class="card-inverse">
-        
-            <div class="card-block">
-           
-            <h4 class="lead card-title">Order yours today?</h4>
-            <p class="card-text">I make beautiful hand-made industrial desks. The app is also hand-made!</p>
-            <a href="http://lekkerit.com/content/5.bootstrap/table.html" target="_blank" class="btn btn-primary">Order an industrial desk</a>
-            <hr>
-                <img src="images/indeskapp.jpg" alt="responsive-image" img class="card-img-top img-responsive">
-            
-            <div class="card-block">
-            <br>
-            
-            </div>
-          </div>
-        </div>
-        </div>
-    
-            </div>
-            </div>
-        </div>
-    
-    <div class="alt3">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Lekker IT - Yummy</title>
+
+  <!-- Custom fonts for this theme -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <!-- Theme CSS -->
+  <link href="css/freelancer.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
     <div class="container">
-        <footer>&copy; Lekker IT<br><a href="#home">Back to top</a>
-        </footer>
-    
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Lekker IT</a>
+      <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </nav>
+
+  <!-- Masthead -->
+  <header class="masthead bg-primary text-white text-center">
+    <div class="container d-flex align-items-center flex-column">
+
+      <!-- Masthead Avatar Image -->
+      <img class="masthead-avatar mb-5 img-circle img-responsive" src="img/bazza.jpg" alt="barry o'brien">
+        
+
+      <!-- Masthead Heading -->
+      <h1 class="masthead-heading text-uppercase mb-0">Barry O'Brien</h1>
+
+      <!-- Icon Divider -->
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <!-- Masthead Subheading -->
+      <p class="masthead-subheading font-weight-light mb-0">Agile Coach - Scrum Master - Developer</p>
+
     </div>
+  </header>
+
+  <!-- Portfolio Section -->
+  <section class="page-section portfolio" id="portfolio">
+    <div class="container">
+
+      <!-- Portfolio Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+
+      <!-- Icon Divider -->
+      <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <!-- Portfolio Grid Items -->
+      <div class="row">
+
+        <!-- Portfolio Item 1 
+        <div class="col-sm-3">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/cloud.png" alt="">
+          </div>
+        </div>
+-->
+        <!-- Portfolio Item 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/construction.png" alt="">
+          </div>
+        </div>
+
+        <!-- Portfolio Item 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/airport.png" alt="">
+          </div>
+        </div>
+
+        <!-- Portfolio Item 4 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/growth.png" alt="">
+          </div>
+        </div>
+
+          
+        <!-- Portfolio Item 5 -->
+          <!--
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/safe.png" alt="">
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/submarine.png" alt="">
+          </div>
+        </div>
+
+      </div>
+      -->
+        </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="page-section bg-primary text-white mb-0" id="about">
+    <div class="container">
+
+      <!-- About Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+
+      <!-- Icon Divider -->
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <!-- About Section Content -->
+      <div class="row">
+        <div class="col-lg-4 ml-auto" style="text-align: justify">
+          <p class="lead">In the not so distant past, I have worked for Intel, KLM and ABN Amro. I am proud to say I have 14-year's experience, including many high-profile projects delivered utilising the scrum-methodology ..</p><hr>
+        </div>
+        <div class="col-lg-4 mr-auto" style="text-align: justify">
+          <p class="lead">We moved to Amsterdam to make my dream of becoming an Java Android Developer a reality. To fund my training I make websites and beautiful industrial desks for home or office use. I like to make both digital and physical things, perhaps I could build something for you?</p>
+        </div>
+          <div class="col-lg-4 mr-auto" style="text-align: justify">
+          <p class="lead">I love to travel with my three children and adorable wife. When we are at home we like to spend time with our pets, Lily, Big-Mo and Binky. We adore cooking and the great outdoors &#128526;</p>
+        </div>
+      </div>
+
+      <!-- About Section Button 
+      <div class="text-center mt-4">
+        <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/themes/freelancer/">
+          <i class="fas fa-download mr-2"></i>
+          Free Download!
+        </a>
+      </div>
+-->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="page-section" id="contact">
+    <div class="container">
+
+      <!-- Contact Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+
+      <!-- Icon Divider -->
+      <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <!-- Contact Section Form -->
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+          <form name="sentMessage" id="contactForm" novalidate="novalidate">
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                <label>Name</label>
+                <input class="form-control" id="name" type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your name.">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                <label>Email Address</label>
+                <input class="form-control" id="email" type="email" placeholder="Email Address" required="required" data-validation-required-message="Please enter your email address.">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                <label>Phone Number</label>
+                <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required" data-validation-required-message="Please enter your phone number.">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                <label>Message</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Message" required="required" data-validation-required-message="Please enter a message."></textarea>
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <br>
+            <div id="success"></div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <div class="row">
+
+        <!-- Footer Location -->
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4">Location</h4>
+          <ul class="list-inline">
+                        
+            <li>                                
+                <a class="btn-social btn-outline" href="https://goo.gl/maps/suggBXLtTDMD1Xqo7" target="_blank">
+                    <i class='fas fa-map-marker-alt' style='font-size:48px;color:white'></i>
+                </a>
+            </li>
+                           
+            </ul>
+            <p class="lead mb-0">Het Gooi, The Netherlands</p>
+        </div>
+
+        <!-- Footer Social Icons -->
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4">Around the Web</h4>
+          
+          <a class="btn btn-outline-light btn-social mx-1" 
+             href="https://www.linkedin.com/in/lekkerbob/"
+             target="_blank">
+            <i class="fab fa-fw fa-linkedin-in"></i>
+          </a>
             
-    <script src="http://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
-    <script src="js.bootstrap.js"></script>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
-    
-    <script>
-        $(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
-        </script>
-    
-    </body>
-    
-    </head>
+          <a class="btn btn-outline-light btn-social mx-1" 
+             href="https://github.com/walthamstowbob"
+             target="_blank">
+            <i class="fab fa-fw fa-github"></i>
+          </a>
+            
+        </div>
+
+        <!-- Footer About Text -->
+        <div class="col-lg-4">
+          <h4 class="text-uppercase mb-4">About Lekker IT</h4>
+          <p class="lead mb-0">You can see that I like to make awsome stuff. Watch this space for more yummy sites, native apps and super-cool coding.</p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Copyright Section -->
+  <section class="copyright py-4 text-center text-white">
+    <div class="container">
+      <small>Lekker IT &copy;</small>
+    </div>
+  </section>
+
+  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+  <div class="scroll-to-top d-lg-none position-fixed ">
+    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+      <i class="fa fa-chevron-up"></i>
+    </a>
+  </div>
+
+  <!-- Portfolio Modals -->
+
+  <!-- Portfolio Modal 1 
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                Portfolio Modal - Title
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
+               Icon Divider 
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                Portfolio Modal - Image
+                <img class="img-fluid rounded mb-5" src="img/portfolio/cabin.png" alt="">
+                Portfolio Modal - Text
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Close Window
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+-->
+  <!-- Portfolio Modal 2 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Air Quality Database</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                <img class="img-fluid rounded mb-5" alt="">
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-5">Working at The Mayor of London's Office we built the world's 1st air quality database and website to record air quality at commercial development sites in the City of London. <a href="https://nrmm.london/" target="_blank"><br>NRMM Database</a> check it out!</p>
+                
+                  <ul class="list-inline item-details">
+                                
+                                <iframe width="600" height="450" src="https://www.youtube.com/embed/CRWaXYWFY_k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="img-responsive img-centered"> </iframe>
+                                <br>
+                                <li>Client:
+                                    <strong><a href="https://www.london.gov.uk/" target="_blank">The Mayor of London</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong>July 2014</strong>
+                                </li>
+                                <li>Service:
+                                    <strong>Scrum Master</strong>
+                                </li>
+                            </ul>
+                  
+                  <i class="fas fa-times fa-fw"></i>
+                  
+                  <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  Close Window
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 3 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">KLM Digital Studio</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                  <img class="img-fluid rounded mb-5"img src="img/portfolio/klm.JPG" width="320" height="240" class="img-responsive img-centered" alt="">
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-5">Coaching KLM Digital Lab on the transformation from a physical process / carbon based organisation towards a mature Agile culture. Competently advising on Kanban, Scrum, XP and Crystal to build novel software solutions. Agile Pillar Lead - coaching senior management to align on strategic direction including how to scale to 10 teams.</p>
+                  
+                  <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="https://www.scrum.org/resources/klms-digital-future" target="_blank">KLM Digital Studio</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong>Jan 2018</strong>
+                                </li>
+                                <li>Service:
+                                    <strong>Agile Coach | Scrum Master</strong>
+                                </li>
+                            </ul>
+                  
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Close Window
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 4 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Kendu - ABN Amro</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                
+                  <iframe  img class="img-fluid rounded mb-5" width="320" height="240" controls autoplay
+                                  src="img/portfolio/Kendu-intro-02.mp4" type="video/mp4" frameborder="0"
+                            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="img-responsive img-centered"> </iframe><br>
+                  
+                <!-- Portfolio Modal - Text -->
+                <p>Key part of the Apps and Digital Innovation Grid in a highly acclaimed Agile environment. Using my extensive experience to coach a high-performance team and fine-tune a complex investment app, a mono-product and a first for the bank. </p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="https://apple.co/2IkpXca" target="_blank">Kendu - ABN Amro</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong>June 2018</strong>
+                                </li>
+                                <li>Service:
+                                    <strong>Scrum Master | Agile Coach</strong>
+                                </li>
+                            </ul>
+                  
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Close Window
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 5 
+  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-labelledby="portfolioModal5Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                Portfolio Modal - Title 
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Locked Safe</h2>
+                Icon Divider
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+               Portfolio Modal - Image 
+                <img class="img-fluid rounded mb-5" src="img/portfolio/safe.png" alt="">
+               Portfolio Modal - Text 
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Close Window
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  Portfolio Modal 6 
+  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                Portfolio Modal - Title 
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Submarine</h2>
+                Icon Divider
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+               Portfolio Modal - Image
+                <img class="img-fluid rounded mb-5" src="img/portfolio/submarine.png" alt="">
+                Portfolio Modal - Text 
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Close Window
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Contact Form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/freelancer.min.js"></script>
+
+</body>
+
+</html>
