@@ -2,9 +2,8 @@
 .DS_Store
 Thumbs.db
 
-# Vendor CSS (Bootstrap, generated)
+# Vendor CSS (Bootstrap only)
 css/bootstrap*
-css/freelancer.min.css
 
 # Vendor JS
 js/bootstrap*
@@ -12,8 +11,6 @@ js/jquery*
 js/cbpAnimatedHeader*
 js/classie*
 js/jqBootstrapValidation*
-js/freelancer.min.js
-js/contact_me.min.js
 js/npm.js
 
 # Vendor libraries
