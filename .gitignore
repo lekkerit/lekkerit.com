@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+Thumbs.db
+
+# Vendor CSS (Bootstrap, generated)
+css/bootstrap*
+css/freelancer.min.css
+
+# Vendor JS
+js/bootstrap*
+js/jquery*
+js/cbpAnimatedHeader*
+js/classie*
+js/jqBootstrapValidation*
+js/freelancer.min.js
+js/contact_me.min.js
+js/npm.js
+
+# Vendor libraries
+font-awesome/
+fonts/
+
+# Duplicate img folder (font-awesome copy)
+font-awesome/
